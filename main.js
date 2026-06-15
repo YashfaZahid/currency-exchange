@@ -1,4 +1,4 @@
-const api_key="6ceaff8ff3e742fbdab53f9f"
+const api_key = process.env.EXCHANGE_RATE_PI_KEY;
 base_url=`https://v6.exchangerate-api.com/v6/${api_key}/pair`
 
 async function handleClick(){
