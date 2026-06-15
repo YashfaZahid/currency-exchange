@@ -1,5 +1,5 @@
-const api_key = process.env.EXCHANGE_RATE_PI_KEY;
-base_url=`https://v6.exchangerate-api.com/v6/${api_key}/pair`
+const api_key=process.env.EXCHANGE_RATE_API_KEY
+const base_url=`https://v6.exchangerate-api.com/v6/${api_key}/pair`
 
 async function handleClick(){
     const baseAmount=document.getElementsByName("base-amount")[0]
