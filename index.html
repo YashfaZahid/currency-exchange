@@ -8,29 +8,31 @@
     <script src="config.js"> </script>
 </head>
 <body>
+    <script type="module" src="main.js"></script>
     <div class="app">
         <div class="vertical"  >
             <h1 style="font-family: monospace;">Currency Converter</h1>
-            <input type="number" name="base-amount" placeholder="Enter Amount">
+            
             <div class="container">
-                    <select class="dropdown" name="Base-Currency" id="Base-Currency">
-                        <option value="USD">USD</option>
-                        <option value="PKR">PKR</option>
-                        <option value="RUB">RUB</option>
-                        <option value="SAR">SAR</option>
-                        <option value="INR">INR</option>
-                    </select>
+                <img id="base-flag" src="https://flagsapi.com/BE/flat/64.png">
+                        <input class="dropdown" name="Base-Currency" list="basecurrency-list">
+                        <datalist id="basecurrency-list">
+                        <option value="">Base Currency</option>
+                        </datalist>
+                    <input type="number" name="base-amount" placeholder="Enter Amount">
         
-                <h1 style="font-family: monospace;font-size: 50px;">TO</h1>
-                    <select class="dropdown" name="Target-Currency" id="Target-Currency">
-                        <option value="USD">USD</option>
-                        <option value="PKR">PKR</option>
-                        <option value="RUB">RUB</option>
-                        <option value="SAR">SAR</option>
-                        <option value="INR">INR</option>
-                    </select>
+                
                 </div>
-                    <button onclick="handleClick()" id="get-rate">Get Rate</button>
+                    <button id="get-rate">&#8645</button>
+                    <div class="container">
+                         <img id="target-flag" src="https://flagsapi.com/PK/flat/64.png">
+                            <input class="dropdown" name="Target-Currency" list="targetcurrency-list">
+                            <datalist id="targetcurrency-list">
+                            <option value="">Target Currency</option>
+                            
+                        </datalist>
+                        <input name="target-amount" placeholder="resultant amount" disabled>
+                    </div>
                 <h2 id="result"></h2>
         
         
@@ -38,6 +40,6 @@
         </div>
     </div>
     
-    <script src="main.js"></script>
+    
 </body>
 </html>
