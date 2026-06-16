@@ -76,7 +76,6 @@ input{
     height: 30px;
     border: none;
     outline: none;
-   
     padding: 10px;
     background-color: rgb(235, 234, 234);
     border-radius: 30px;
@@ -122,8 +121,22 @@ img{
 }
 
 @media screen and (max-width:768px) {
+    body,html{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
     img{
-        min-width: 30px;
-        min-height: 30px;
+        min-width: 20px;
+        min-height: 20px;
+    }
+    .dropdown{
+        margin: 5px;
+    }
+    input{
+        min-width:6rem;
+        margin: 0;
+    }
+    .container{
+        gap: 0.1em;
     }
 }
