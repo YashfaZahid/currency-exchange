@@ -15,7 +15,7 @@
             
             <div class="container">
                 <img id="base-flag" src="https://flagsapi.com/BE/flat/64.png">
-                        <input class="dropdown" name="Base-Currency" list="basecurrency-list">
+                        <input class="dropdown" name="Base-Currency" list="basecurrency-list" >
                         <datalist id="basecurrency-list">
                         <option value="">Base Currency</option>
                         </datalist>
@@ -23,7 +23,11 @@
         
                 
                 </div>
-                    <button id="get-rate">&#8645</button>
+                <div class="container">
+                    <button id="swap-currrencies" class="swapCurrencies"  style="font-size: 2rem;">&#8645</button>
+                        <button id="get-rate" class="getRate" style="font-size: 2rem;">&#36</button>
+                </div>
+
                     <div class="container">
                          <img id="target-flag" src="https://flagsapi.com/PK/flat/64.png">
                             <input class="dropdown" name="Target-Currency" list="targetcurrency-list">
