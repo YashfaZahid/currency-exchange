@@ -57,9 +57,9 @@ body {
 }
 .getRate{
     height: 3rem;
-    width: 13rem;
+    width: 70%;
     background-color:#470505;
-    border-radius: 15px;
+    border-radius: 30px;
     border: solid bisque 1px;
     color: white;
     font-family: monospace;
@@ -131,6 +131,9 @@ img{
     h2 {
         font-size: 1.4rem;
     }
+    .getRate{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -153,6 +156,6 @@ img{
         gap: 0.1em;
     }
     .getRate{
-        width: 8rem;
+        width: 70%;
     }
 }
