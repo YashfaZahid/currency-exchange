@@ -53,15 +53,18 @@ body {
     border-radius: 50%;
     border: solid bisque 1px;
     color: white;
+    /* margin-right: 350px; */
 }
 .getRate{
-    height: 50px;
-    width: 50px;
+    height: 3rem;
+    width: 13rem;
     background-color:#470505;
-    border-radius: 50%;
+    border-radius: 15px;
     border: solid bisque 1px;
     color: white;
-    margin-left: 3rem;
+    font-family: monospace;
+    font-size: 1.3rem;
+    margin-top: 30px;
 
 }
 button:hover{
@@ -82,7 +85,7 @@ h2{
 
 }
 input{
-    max-width: 200px;
+    max-width: 300px;
     height: 30px;
     border: none;
     outline: none;
@@ -118,7 +121,7 @@ img{
         padding: 15px;
     }
     input {
-        max-width: 150px;      
+        max-width: 250px;      
         height: 35px;
         font-size: 16px;
     }
@@ -148,5 +151,8 @@ img{
     }
     .container{
         gap: 0.1em;
+    }
+    .getRate{
+        width: 8rem;
     }
 }
